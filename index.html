@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人记账本 - 免费下载 | 简单好用的本地记账工具</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* 导航栏 */
+        .header {
+            background-color: #2196F3;
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        /* 英雄区 */
+        .hero {
+            padding: 4rem 0;
+            text-align: center;
+            background: linear-gradient(135deg, #e3f2fd 0%, #f5f5f5 100%);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2196F3;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #666;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .download-btn {
+            display: inline-block;
+            background-color: #2196F3;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #1976D2;
+        }
+        /* 功能介绍 */
+        .features {
+            padding: 4rem 0;
+        }
+        .features h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: #444;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .feature-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .feature-item h3 {
+            color: #2196F3;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        /* 截图展示 */
+        .screenshots {
+            padding: 4rem 0;
+            background-color: #f5f5f5;
+        }
+        .screenshots h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: #444;
+        }
+        .screenshot-img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            margin: 0 auto;
+            display: block;
+            max-height: 600px;
+        }
+        /* 使用说明 */
+        .guide {
+            padding: 4rem 0;
+        }
+        .guide h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #444;
+        }
+        .guide-steps {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .guide-steps li {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        /* 页脚 */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .features h2, .screenshots h2, .guide h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- 导航栏 -->
+<header class="header">
+    <div class="container">
+        <div class="logo">📒 个人记账本</div>
+        <div>免费 · 本地 · 无广告</div>
+    </div>
+</header>
+
+<!-- 下载入口 -->
+<section class="hero">
+    <div class="container">
+        <h1>简单好用的本地个人记账本</h1>
+        <p>无需安装，纯HTML本地运行，数据存储在浏览器中，安全不泄露！记录收支、自动统计、明细查询，轻松管理个人财务。</p>
+        <a href="download/个人记账本.zip" class="download-btn">📥 立即下载</a>
+    </div>
+</section>
+
+<!-- 功能介绍 -->
+<section class="features">
+    <div class="container">
+        <h2>核心功能</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>📊 自动统计</h3>
+                <p>实时计算总收入、总支出和结余，无需手动计算，财务状况一目了然。</p>
+            </div>
+            <div class="feature-item">
+                <h3>📝 明细记录</h3>
+                <p>支持收入/支出分类、金额、日期、备注等信息记录，可随时删除修改。</p>
+            </div>
+            <div class="feature-item">
+                <h3>💾 本地存储</h3>
+                <p>数据存储在浏览器本地，无需联网，无需注册，保护你的财务隐私。</p>
+            </div>
+            <div class="feature-item">
+                <h3>🎨 简洁界面</h3>
+                <p>清爽的UI设计，操作简单，无需学习成本，适合所有人群使用。</p>
+            </div>
+            <div class="feature-item">
+                <h3>📱 响应式设计</h3>
+                <p>适配电脑、手机、平板等设备，随时随地记录收支。</p>
+            </div>
+            <div class="feature-item">
+                <h3>🆓 完全免费</h3>
+                <p>无广告、无内购、无付费功能，永久免费使用。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 截图展示 -->
+<section class="screenshots">
+    <div class="container">
+        <h2>界面展示</h2>
+        <img src="image/屏幕截图 2025-12-17 142945.png" alt="记账本界面截图" class="screenshot-img">
+    </div>
+</section>
+
+<!-- 使用说明 -->
+<section class="guide">
+    <div class="container">
+        <h2>使用说明</h2>
+        <div class="guide-steps">
+            <ol>
+                <li>下载压缩包后解压，得到 <code>记账本.html</code> 文件；</li>
+                <li>双击该文件，用任意浏览器（Chrome/Edge/火狐等）打开即可使用；</li>
+                <li>在「添加收支记录」区域填写类型、分类、金额、日期等信息，点击「保存记录」；</li>
+                <li>「收支统计」区域自动显示总收支和结余；</li>
+                <li>「收支明细」区域可查看所有记录，点击「删除」可移除不需要的记录；</li>
+                <li>数据会自动保存在浏览器中，下次打开文件仍能看到之前的记录。</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 个人记账本 - 免费本地记账工具</p>
+    </div>
+</footer>
+</body>
+</html>
